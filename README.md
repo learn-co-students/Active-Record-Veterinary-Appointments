@@ -50,7 +50,7 @@ Create your migrations.
 - `Pet#Owner`
     - should return the `Owner` instance for this Pet
 
-### Owner
+#### Owner
 - `Owner#pets`
     -  returns a collection of all the pets for this owner
 
@@ -63,14 +63,14 @@ Create your migrations.
 - `Actor#movies`
   - should return a collection of all the movies that the actor has performed in
 
-## Veterinarian
+#### Veterinarian
 - `Veterinarian#patients_name` returns an array of pet names from pets that have an appointments with this veterinarian
 
 - `Veterinarian#owner_names` returns an array of owners names from pets that have an appointments with this veterinarian
 
 
 
-## Pet
+#### Pet
 -  `Pet#make_appointment`(veterinarian,cost) 
     - takes a `Veterinarian` and cost and returns an instance of `Appointment` that joins the `Veterinarian` and the `Pet`
 
@@ -81,11 +81,11 @@ Create your migrations.
 - `Pet#locations` returns a string of the Veterinarian name followed by their location
 
 
-## Appointment
+#### Appointment
 
 - `Appointment#paid` sets the cost of the appointment to 0
 
-## Owner 
+#### Owner 
 - `Owner#adopt(petName)`
     - Takes a name and creates an instance of a `Pet` that is joined with this owner, conditions should start as an empty string
 
