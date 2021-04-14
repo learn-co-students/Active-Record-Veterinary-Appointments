@@ -43,10 +43,8 @@ Create your migrations.
 
 - `Pet#veterinarian`
   - returns a collection of all the veterinarians for the pet
-
 - `Pet#appointments`
   - returns a collection of all the appointments for this pet
-
 - `Pet#Owner`
     - should return the `Owner` instance for this Pet
 
@@ -61,8 +59,6 @@ Create your migrations.
 
 - `Veterinarian#owner_names` returns an array of owners names from pets that have an appointments with this veterinarian
 
-
-
 #### Pet
 -  `Pet#make_appointment`(veterinarian,cost) 
     - takes a `Veterinarian` and cost and returns an instance of `Appointment` that joins the `Veterinarian` and the `Pet`
@@ -72,7 +68,6 @@ Create your migrations.
 - `Pet#pay_all_bills` sets the cost of every appointment belonging to this pet to 0
 
 - `Pet#locations` returns a string of the Veterinarian name followed by their location
-
 
 #### Appointment
 
